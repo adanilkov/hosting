@@ -68,23 +68,21 @@
 <div class="">
   <div class="border-t max-w-[1000px] mx-auto"></div>
   <footer
-    class="max-w-[1000px] mx-auto footer pt-10 gap-x-48 lg:gap-x-64 xl:gap-x-96 text-base flex justify-between"
+    class="max-w-[1000px] mx-auto footer pt-10 text-base flex justify-start"
   >
-    <nav>
+    <nav class="mr-20 mb-10">
       <span class="footer-title opacity-80">Explore</span>
-      <a class="link link-hover mb-1" href="/">Overview</a>
-      <a class="link link-hover my-1" href="/pricing">Pricing</a>
-      <a class="link link-hover my-1" href="/FAQ">FAQ</a>
-      <a class="link link-hover my-1" href="/contact_us">Contact Us</a>
-      <a
-        class="link link-hover my-1"
-        href="https://github.com/CriticalMoments/CMSaasStarter">Github</a
+      <a class="link link-hover mb-1 opacity-60" href="/">Overview</a>
+      <a class="link link-hover my-1 opacity-60" href="/pricing">Pricing</a>
+      <a class="link link-hover my-1 opacity-60" href="/FAQ">FAQ</a>
+      <a class="link link-hover my-1 opacity-60" href="/contact_us"
+        >Contact Us</a
       >
     </nav>
     <aside>
       <span class="footer-title opacity-80">Legal</span>
-      <a class="link link-hover my-1" href="/terms">Terms</a>
-      <a class="link link-hover my-1" href="/privacy">Privacy</a>
+      <a class="link link-hover my-1 opacity-60" href="/terms">Terms</a>
+      <a class="link link-hover my-1 opacity-60" href="/privacy">Privacy</a>
     </aside>
   </footer>
 </div>
