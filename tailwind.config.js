@@ -7,21 +7,22 @@ export default {
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
     themes: [
+      // "dracula"
       {
         saasstartertheme: {
-          primary: "#180042",
-          "primary-content": "#fefbf6",
-          secondary: "#c7b9f8",
-          neutral: "#180042",
-          "neutral-content": "#fefbf6",
-          accent: "#db2777",
-          "accent-content": "#180042",
-          "base-content": "#180042",
-          "base-100": "#fefbf6",
-          "base-200": "#faedd6",
+          primary: "#fefbf6",
+          "primary-content": "#180042", 
+          secondary: "#4CAF50", // Green
+          neutral: "#121212", // Dark Gray
+          "neutral-content": "#FFFFFF", // White
+          accent: "#66BB6A", 
+          "accent-content": "#fefbf6",
+          "base-content": "#fefbf6",
+          "base-100": "#1c1c1c", 
+          "base-200": "#232323", //161617
           success: "#37d399",
           error: "#f77272",
-        },
+        },        
       },
     ],
   },

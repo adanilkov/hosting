@@ -6,6 +6,7 @@ import { PRIVATE_STRIPE_API_KEY } from "$env/static/private"
 import Stripe from "stripe"
 const stripe = new Stripe(PRIVATE_STRIPE_API_KEY, { apiVersion: "2023-08-16" })
 
+
 export const getOrCreateCustomerId = async ({
   supabaseServiceRole,
   session,
@@ -27,7 +28,6 @@ export const getOrCreateCustomerId = async ({
   if (dbCustomer?.stripe_customer_id) {
     return { customerId: dbCustomer.stripe_customer_id }
   }
-
   // Fetch data needed to create customer
   const { data: profile, error: profileError } = await supabaseServiceRole
     .from("profiles")
@@ -37,7 +37,6 @@ export const getOrCreateCustomerId = async ({
   if (profileError) {
     return { error: profileError }
   }
-
   // Create a stripe customer
   let customer
   try {
@@ -53,7 +52,6 @@ export const getOrCreateCustomerId = async ({
   } catch (e) {
     return { error: e }
   }
-
   if (!customer.id) {
     return { error: "Unknown stripe user creation error" }
   }

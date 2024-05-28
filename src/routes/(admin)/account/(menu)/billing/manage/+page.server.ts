@@ -23,7 +23,6 @@ export const load: PageServerLoad = async ({
       message: "Unknown error (PCID). If issue persists, please contact us.",
     })
   }
-
   let portalLink
   try {
     const portalSession = await stripe.billingPortal.sessions.create({
@@ -34,6 +33,5 @@ export const load: PageServerLoad = async ({
   } catch (e) {
     error(500, "Unknown error (PSE). If issue persists, please contact us.")
   }
-
   redirect(303, portalLink ?? "/account/billing")
 }

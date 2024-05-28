@@ -44,6 +44,7 @@ export const load: PageServerLoad = async ({
   let checkoutUrl
   try {
     const stripeSession = await stripe.checkout.sessions.create({
+
       line_items: [
         {
           price: params.slug,
@@ -57,6 +58,7 @@ export const load: PageServerLoad = async ({
     })
     checkoutUrl = stripeSession.url
   } catch (e) {
+    // console.log(e)
     error(500, "Unknown Error (SSE): If issue persists please contact us.")
   }
 

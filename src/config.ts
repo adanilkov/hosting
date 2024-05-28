@@ -1,4 +1,4 @@
-export const WebsiteName: string = "SaaS Starter"
-export const WebsiteBaseUrl: string = "https://saasstarter.work"
+export const WebsiteName: string = "Minecraft Hosting"
+export const WebsiteBaseUrl: string = "https://hosting-mc.com"
 export const WebsiteDescription: string =
-  "Open source, fast, and free to host SaaS template. Built with SvelteKit, Supabase, Stripe, Tailwind, DaisyUI, and Postgres"
+  "Seamless and powerful Minecraft server hosting with flexible plans. Enjoy low-latency, robust performance, and support for all your favorite mods and plugins. Get started today and create your perfect Minecraft world!"
