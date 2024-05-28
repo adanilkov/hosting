@@ -38,7 +38,7 @@
     {
       name: "Lag-Free Performance",
       doublewidth: false,
-      link: "/login",
+      // link: "/login",
       description:
         "Enjoy smooth gameplay with optimized runtimes powered by best in class server hardware.",
       svgContent: `<path d="M5.66953 9.91436L8.73167 5.77133C10.711 3.09327 11.7007 1.75425 12.6241 2.03721C13.5474 2.32018 13.5474 3.96249 13.5474 7.24712V7.55682C13.5474 8.74151 13.5474 9.33386 13.926 9.70541L13.946 9.72466C14.3327 10.0884 14.9492 10.0884 16.1822 10.0884C18.4011 10.0884 19.5106 10.0884 19.8855 10.7613C19.8917 10.7724 19.8977 10.7837 19.9036 10.795C20.2576 11.4784 19.6152 12.3475 18.3304 14.0857L15.2683 18.2287C13.2889 20.9067 12.2992 22.2458 11.3758 21.9628C10.4525 21.6798 10.4525 20.0375 10.4525 16.7528L10.4526 16.4433C10.4526 15.2585 10.4526 14.6662 10.074 14.2946L10.054 14.2754C9.6673 13.9117 9.05079 13.9117 7.81775 13.9117C5.59888 13.9117 4.48945 13.9117 4.1145 13.2387C4.10829 13.2276 4.10225 13.2164 4.09639 13.205C3.74244 12.5217 4.3848 11.6526 5.66953 9.91436Z" stroke="#4CAF50" stroke-width="1.5"/>`,
@@ -58,7 +58,7 @@
     {
       name: "Affordable Pricing",
       doublewidth: false,
-      link: "/pricing",
+      // link: "/pricing",
       description:
         "Different pricing options to fit all your needs. Pay by the week, month, or year.",
       svgContent: `<path d="M12 6V18" stroke="#4CAF50" stroke-width="1.5" stroke-linecap="round"/>
@@ -78,7 +78,7 @@
     {
       name: "User-Friendly Control Panel",
       doublewidth: false,
-      link: "/pricing",
+      // link: "/pricing",
       description:
         "Manage your server effortlessly with an intuitive interface.",
       svgContent: `<path d="M2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12C22 15.7712 22 17.6569 20.8284 18.8284C19.6569 20 17.7712 20 14 20H10C6.22876 20 4.34315 20 3.17157 18.8284C2 17.6569 2 15.7712 2 12Z" stroke="#4CAF50" stroke-width="1.5"/>
@@ -92,7 +92,7 @@
       doublewidth: true,
       newPage: false,
       linkText: "Docs",
-      link: "/account/billing",
+      // link: "/account/billing",
       description:
         "Easily switch between vanilla Minecraft and popular mod-packs. Popular plugins are also available. Contact us for custom support.",
       svgContent: `<circle cx="12" cy="12" r="3" stroke="#4CAF50" stroke-width="1.5"/>
@@ -281,7 +281,7 @@
         <div
           class="{feature.doublewidth
             ? 'w-[556px]'
-            : 'w-[270px]'} card bg-base-200 min-h-[300px] flex-none shadow-xl"
+            : 'w-[270px]'} card bg-base-200 min-h-[250px] flex-none shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out"
         >
           <div class="card-body items-center text-center p-[24px] pt-[32px]">
             <div>
@@ -303,7 +303,7 @@
             <p class="text-sm">
               {feature.description}
             </p>
-            {#if feature.link}
+            <!-- {#if feature.link}
               <a
                 href={feature.link}
                 class="pb-4"
@@ -315,7 +315,7 @@
                   {feature.linkText ? feature.linkText : "Try It"}
                 </button>
               </a>
-            {/if}
+            {/if} -->
           </div>
         </div>
       {/each}
@@ -334,57 +334,35 @@
         class="flex flex-col lg:flex-row mt-8 gap-6 place-content-center content-center"
       >
         <div class="hidden md:block">
-          <a href="https://criticalmoments.io" target="_blank" class="link">
+          <a href="/" target="_blank" class="link">
             <div class="mockup-browser border">
               <div class="mockup-browser-toolbar">
-                <div class="input" style="background:#eee;">
-                  https://criticalmoments.io
-                </div>
+                <div class="input" style="background:#eee;"></div>
               </div>
               <div class="flex justify-center">
                 <img
-                  alt="Screenshot of criticalmoments.io homepage"
+                  alt="Background of a Minecraft server"
                   class="aspect-[2044/1242]"
-                  src="/images/example-home.png"
+                  src="/images/parallax-bg.jpg"
                 />
               </div>
             </div>
           </a>
         </div>
-        <div class="md:hidden">
-          <a href="https://criticalmoments.io" target="_blank" class="link">
-            <div class="card shadow-xl border overflow-hidden">
-              <img
-                alt="Screenshot of criticalmoments.io homepage"
-                class="aspect-[2044/1242]"
-                src="/images/example-home.png"
-              />
-            </div></a
-          >
-        </div>
+
         <div class="min-w-[270px] lg:min-w-[420px] flex mt-6 lg:mt-0">
           <div class="my-auto">
             <div class="px-4 text-lg md:text-xl">
-              <a href="https://criticalmoments.io" class="" target="_blank"
-                >SaaS Starter was created by <span
-                  class="font-bold whitespace-nowrap">Critical Moments</span
-                >: a SDK to to help mobile apps
-                <span class="underline decoration-secondary decoration-[3px]"
-                  >increase conversion rates and app-ratings.</span
-                ></a
-              >
-            </div>
-            <div class="px-4 mt-6 text-lg md:text-xl">
-              Our <a
-                href="https://criticalmoments.io"
-                class="link font-bold"
-                target="_blank">webpage</a
-              > is the best example of SaaS Starter with style and real content.
+              <span>
+                <span class="font-bold">Minecraft hosting</span> that is perfect
+                for you and your friends. Play vanilla or modded with no lag,
+                downtime, or hassle. <span class="font-bold">Try it now!</span>
+              </span>
             </div>
             <div class="mt-4 text-large">
-              <a href="https://criticalmoments.io" target="_blank">
+              <a href="/pricing" target="_self">
                 <button class="btn btn-primary btn-wide mt-3"
-                  >See it in Action</button
+                  >Get Started</button
                 >
               </a>
             </div>

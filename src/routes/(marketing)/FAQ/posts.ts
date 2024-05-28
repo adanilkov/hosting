@@ -1,5 +1,5 @@
 export const FAQInfo = {
-  name: "SaaS Starter FAQ",
+  name: "MC Hosting FAQ",
   description: "A sample FAQ",
 }
 
