@@ -4,6 +4,7 @@
   import { goto } from "$app/navigation"
   import { onMount } from "svelte"
   import { page } from "$app/stores"
+  import { ThemeSupa } from "@supabase/auth-ui-shared"
 
   export let data
   let { supabase } = data
@@ -44,20 +45,40 @@
     <span>Email verified! Please sign in.</span>
   </div>
 {/if}
-<h1 class="text-2xl font-bold mb-6">Sign In</h1>
-<Auth
-  supabaseClient={data.supabase}
-  view="sign_in"
-  redirectTo={`${data.url}/auth/callback`}
-  providers={oauthProviders}
-  socialLayout="horizontal"
-  showLinks={false}
-  appearance={sharedAppearance}
-  additionalData={undefined}
-/>
-<div class="text-l text-slate-800 mt-4">
-  <a class="underline" href="/login/forgot_password">Forgot password?</a>
-</div>
-<div class="text-l text-slate-800 mt-3">
-  Don't have an account? <a class="underline" href="/login/sign_up">Sign up</a>.
+<div class="flex flex-col justify-center h-[90vh]">
+  <h1 class="text-2xl mb-1 text-left">Welcome back</h1>
+  <h2 class="mb-6 text-left opacity-70">Sign In</h2>
+  <Auth
+    supabaseClient={data.supabase}
+    view="sign_in"
+    redirectTo={`${data.url}/auth/callback`}
+    providers={oauthProviders}
+    socialLayout="horizontal"
+    showLinks={false}
+    appearance={{ theme: ThemeSupa }}
+    theme="dark"
+    additionalData={undefined}
+    localization={{
+      variables: {
+        sign_in: {
+          email_label: "Email",
+          email_input_placeholder: "you@example.com",
+          password_label: "Password",
+          password_input_placeholder: "••••••••",
+        },
+      },
+    }}
+  />
+  <div
+    class="text-l opacity-40 mt-4 hover:opacity-60 transition duration-300 text-left"
+  >
+    <a class="underline" href="/login/forgot_password">Forgot password?</a>
+  </div>
+  <div class="text-l mt-3 text-left">
+    <span class="opacity-40">Don't have an account?</span>
+    <a
+      class="text-l opacity-40 hover:opacity-60 transition duration-300 text-left underline"
+      href="/login/sign_up">Sign up</a
+    ><span class="opacity-40">.</span>
+  </div>
 </div>
