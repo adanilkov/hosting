@@ -4,9 +4,7 @@
     isEurope = Intl.DateTimeFormat()
       .resolvedOptions()
       .timeZone.startsWith("Europe/")
-  } catch (e) {
-    /* continue */
-  }
+  } catch (e) {}
 </script>
 
 <div

@@ -10,12 +10,6 @@
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1 hidden sm:flex font-bold text-sm">
-        <!-- <li class="md:mx-4">
-          <a
-            href="https://github.com/CriticalMoments/CMSaasStarter"
-            class="border border-primary">★ us on Github</a
-          >
-        </li> -->
         <li class="md:mx-2"><a href="/FAQ">FAQ</a></li>
         <li class="md:mx-2"><a href="/pricing">Pricing</a></li>
         <li class="md:mx-2"><a href="/account">Sign In</a></li>
@@ -47,12 +41,6 @@
           <li><a href="/FAQ">FAQ</a></li>
           <li><a href="/pricing">Pricing</a></li>
           <li><a href="/account">Account</a></li>
-          <!-- <li>
-            <a
-              href="https://github.com/CriticalMoments/CMSaasStarter"
-              class="border border-primary">★ us on Github</a
-            >
-          </li> -->
         </ul>
       </div>
     </div>

@@ -18,10 +18,10 @@
   }
 </script>
 
-<div class="drawer lg:drawer-open">
+<div class="drawer">
   <input id="admin-drawer" type="checkbox" class="drawer-toggle" />
   <div class="drawer-content">
-    <div class="navbar bg-base-100 lg:hidden">
+    <div class="navbar bg-base-100">
       <div class="flex-1">
         <a class="btn btn-ghost normal-case text-xl" href="/">MC Hosting</a>
       </div>
@@ -51,7 +51,7 @@
   </div>
 
   <div class="drawer-side">
-    <label for="admin-drawer" class="drawer-overlay" />
+    <label for="admin-drawer" class="drawer-overlay"></label>
     <ul
       class="menu menu-lg p-4 w-80 min-h-full bg-base-100 lg:border-r text-primary"
     >
@@ -60,7 +60,7 @@
           class="normal-case menu-title text-xl font-bold text-primary flex flex-row"
         >
           <a href="/" class="grow">MC Hosting</a>
-          <label for="admin-drawer" class="lg:hidden ml-3"> &#x2715; </label>
+          <label for="admin-drawer" class="ml-3"> &#x2715; </label>
         </div>
       </li>
       <li>

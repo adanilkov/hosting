@@ -56,7 +56,7 @@
 <div class="min-h-[70vh] pb-8 pt-[5vh] px-4">
   <h1 class="text-3xl font-bold text-center">Pricing</h1>
   <h2 class="text-xl text-center text-slate-500 mt-1 pb-3">
-    Totally free, scale to millions of users
+    Plans to meet all your needs.
   </h2>
 
   <div class="w-full my-8">
@@ -67,48 +67,82 @@
         <div class="collapse collapse-arrow join-item border border-primary">
           <input type="radio" name="faq-accordion" />
           <div class="collapse-title text-lg font-medium">
-            Is this template free to use?
-          </div>
-          <div class="collapse-content">
-            <p>Yup! This template is free to use for any project.</p>
-          </div>
-        </div>
-        <div class="collapse collapse-arrow join-item border border-primary">
-          <input type="radio" name="faq-accordion" />
-          <div class="collapse-title text-lg font-medium">
-            Why does a free template have a pricing page?
+            What payment methods do you accept?
           </div>
           <div class="collapse-content">
             <p>
-              The pricing page is part of the boilerplate. It shows how the
-              pricing page integrates into the billing portal and the Stripe
-              Checkout flows.
+              We accept major credit cards, including Visa, MasterCard, American
+              Express, and Discover. Payments are securely processed through
+              Stripe.
             </p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border border-primary">
           <input type="radio" name="faq-accordion" />
           <div class="collapse-title text-lg font-medium">
-            What license is the template under?
+            Can I upgrade or downgrade my plan at any time?
           </div>
           <div class="collapse-content">
-            <p>The template is under the MIT license.</p>
+            <p>
+              Absolutely! You can upgrade or downgrade your plan at any time
+              directly from your account dashboard. Changes will take effect
+              immediately, and any prorated charges or credits will be applied
+              accordingly.
+            </p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border border-primary">
           <input type="radio" name="faq-accordion" />
           <div class="collapse-title text-lg font-medium">
-            Can I try out purchase flows without real a credit card?
+            Do you offer a free trial?
           </div>
           <div class="collapse-content">
             <p>
-              Our demo page <a href="https://saasstarter.work" class="link"
-                >SaasStarter.work</a
-              > has a functional demo page, using Stripe's test environment.
+              We offer a free trial instance where you have access to our
+              services for a day—however, any instances you have running will be
+              deleted 24hrs after creation. During the trial, you can explore
+              all the features and see if our hosting service meets your needs
+              without any upfront payment.
             </p>
-            <p class="mt-4">
-              You can use the credit card number 4242 4242 4242 4242 with any
-              future expiry date to test the payment and upgrade flows.
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border border-primary">
+          <input type="radio" name="faq-accordion" />
+          <div class="collapse-title text-lg font-medium">
+            How does the billing cycle work?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Billing cycles are either monthly or annually, depending on the
+              subscription you choose. Monthly subscriptions are billed on the
+              same day each month, and annual subscriptions are billed on the
+              same day each year. You can cancel at any time, and we will not
+              bill you for the next cycle.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border border-primary">
+          <input type="radio" name="faq-accordion" />
+          <div class="collapse-title text-lg font-medium">
+            Is there a setup fee?
+          </div>
+          <div class="collapse-content">
+            <p>
+              No, there are no setup fees for any of our plans. All our plans
+              are ready to go as soon as you sign up.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border border-primary">
+          <input type="radio" name="faq-accordion" />
+          <div class="collapse-title text-lg font-medium">
+            Can I transfer my existing server to your hosting service?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Yes, we offer free server migration assistance. Our support team
+              will help you transfer your existing server data to our hosting
+              platform seamlessly.
             </p>
           </div>
         </div>
